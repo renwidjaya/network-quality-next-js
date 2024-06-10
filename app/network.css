@@ -1,0 +1,33 @@
+.signal-bars {
+  display: flex;
+  align-items: flex-end;
+  height: 20px; /* Adjust the height as needed */
+  margin-top: 10px;
+}
+
+.bar {
+  width: 5px; /* Width of each bar */
+  margin-right: 2px; /* Space between bars */
+  background-color: lightgray; /* Default color for inactive bars */
+  transition: background-color 0.3s;
+}
+
+.bar.active {
+  /* The color will be set dynamically using inline styles */
+}
+
+.bar:nth-child(1) {
+  height: 5px;
+}
+
+.bar:nth-child(2) {
+  height: 10px;
+}
+
+.bar:nth-child(3) {
+  height: 15px;
+}
+
+.bar:nth-child(4) {
+  height: 20px;
+}
